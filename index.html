@@ -2,11 +2,18 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
-  <script type="application/javascript">
-  </script>
-  <body>
-    <main id="main"></main>
-    <script type="text/javascript" src="./index.js"></script>
+  <body class="bg-gray-800 text-white">
+    <main id="main" class="container mx-auto py-8">
+      <div id="choices" class="flex justify-center space-x-4 mb-8">
+        <button id="rock" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">Rock</button>
+        <button id="paper" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">Paper</button>
+        <button id="scissors" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">Scissors</button>
+      </div>
+      <div id="result" class="text-center"></div>
+      <div id="score" class="text-center">Player: 0, Computer: 0</div>
+    </main>
+    <script type="text/javascript" src="./game.js"></script>
   </body>
 </html>
