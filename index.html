@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body class="bg-gray-800 text-white">
     <main id="main" class="container mx-auto py-8">
       <div id="choices" class="flex justify-center space-x-4 mb-8">
-        <button id="rock" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">Rock</button>
-        <button id="paper" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">Paper</button>
-        <button id="scissors" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">Scissors</button>
+        <button id="rock" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">
+          <i class="fas fa-hand-rock mr-2"></i> Rock
+        </button>
+        <button id="paper" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">
+          <i class="fas fa-hand-paper mr-2"></i> Paper
+        </button>
+        <button id="scissors" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">
+          <i class="fas fa-hand-scissors mr-2"></i> Scissors
+        </button>
       </div>
       <div id="result" class="text-center"></div>
       <div id="score" class="text-center">Player: 0, Computer: 0</div>

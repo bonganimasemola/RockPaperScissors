@@ -28,8 +28,8 @@ function getComputerChoice() {
       resultElement.textContent = `You Lose! ${computerSelection} beats ${playerSelection}`;
     }
   
-    if (playerScore >= 5 || computerScore >= 5) {
-      const winner = playerScore >= 5 ? 'Player' : 'Computer';
+    if (playerScore >= 3 || computerScore >= 3) {
+      const winner = playerScore >= 3 ? 'Player' : 'Computer';
       resultElement.textContent = `Game Over! ${winner} wins the game!`;
       
     }
