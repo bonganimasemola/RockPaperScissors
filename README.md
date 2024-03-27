@@ -1,20 +1,41 @@
-Assignment:
+# Rock Paper Scissors Game Documentation
 
-* 1 Start a new Git repo for your project.
+Introduction:
 
-* 2 Create a blank HTML document with a script tag (Hint: it is best practice to link an external .js file). This game is going to be played completely from the console, so don’t worry about putting anything else in there.
+This documentation outlines the structure and functionality of a Rock Paper Scissors game developed using vanilla JavaScript for logic and Tailwind CSS for styling.
 
-* 3 Your game is going to play against the computer, so begin with a function called getComputerChoice that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’. We’ll use this function in the game to make the computer’s play. Tip: use the console to make sure this is returning the expected output before moving to the next step!
+Project Overview:
 
-* 4 Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner or tie of the round like so: "You Lose! Paper beats Rock"
+The Rock Paper Scissors game allows two players to compete against each other. Each player selects one of the three options: rock, paper, or scissors. The winner is determined based on the choices made by the players according to the traditional rules of the game.
 
-     * Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation).
+Project Structure:
 
-* 5 Write a NEW function called playGame(). Use the previous function inside of this one to play a five round game that keeps score and reports a winner or loser at the end.
+1. index.html: This file contains the HTML structure of the game interface. It includes elements for displaying player options, result messages, and game controls.
+2. style.css: This file contains minimal custom CSS for the game layout and responsiveness. Tailwind CSS classes are used extensively for styling.
+3. game.js: This JavaScript file contains the game logic and functionality. It handles user interactions, processes player choices, determines the winner, and updates the UI accordingly.
 
-   * You have not officially learned how to “loop” over code to repeat function calls… if you already know about loops from somewhere else (or if you feel like doing some more learning) feel free to use them. If not, don’t worry! Just call your playRound function 5 times in a row. Loops are covered in the next lesson.
-   * At this point you should be using console.log() to display the results of each round and the winner at the end.
-    Use prompt() to get input from the user. Read the docs here if you need to.
-   * Feel free to re-work your previous functions if you need to. Specifically, you might want to change the return value to something more useful.
-   * Feel free to create more “helper” functions if you think it would be useful.
+Installation and Usage:
 
+To run the Rock Paper Scissors game locally, follow these steps:
+
+1. Clone the project repository from GitHub or download the project files directly.
+2. Open the index.html file in a web browser.
+3. Start playing the game by selecting your choice (rock, paper, or scissors) and see the result displayed on the screen.
+
+Game Logic:
+
+The game logic is implemented in game.js using JavaScript. Here's a high-level overview of the logic:
+
+1. Define variables to store player choices, result messages, and game controls.
+2. Add event listeners to handle user clicks on player options.
+3. Implement a function to generate a random choice for the computer opponent.
+4. Write a function to determine the winner based on the choices made by both players.
+5. Update the UI to display the result message and reset the game after each round.
+
+Tailwind CSS Integration:
+
+Tailwind CSS is used for styling the game interface. It provides utility classes for layout, typography and component styling.
+
+Conclusion:
+
+The Rock Paper Scissors game project demonstrates the use of vanilla JavaScript for implementing game logic and Tailwind CSS for styling. It provides an engaging and interactive experience for players to enjoy the classic game of Rock Paper Scissors.
